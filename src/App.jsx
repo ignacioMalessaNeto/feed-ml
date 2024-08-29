@@ -1,24 +1,23 @@
-import { Post } from "./Post.jsx";
+import { Post } from "./components/Post.jsx";
 import { Header } from "./components/header.jsx";
-import './styles.css';
+import { Sidebar } from "./components/Sidebar.jsx";
+
+import styles from "./App.module.css";
+
+import "./global.css";
 
 export function App() {
-
   return (
     <div>
       <Header />
 
-      <Post 
-      author="Ignacio"
-      content="lore ipsum"
-      />
-      <Post />
-      <Post 
-      author="Teste Post"
-      content="lore ipsum2"
-      />
-      <Post />
+      <div className={styles.wrapper}>
+        <Sidebar />
+        <main>
+          <Post /> {/*author="Ignacio" content="Lorem" || author="Teste Post" content="Lorem ipsum2" */}
+          <Post />
+        </main>
+      </div>
     </div>
-  )
+  );
 }
-
