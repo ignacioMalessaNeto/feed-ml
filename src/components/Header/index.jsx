@@ -1,6 +1,6 @@
 import styles from './Header.module.css';
 
-import ignateLogo from '../assets/ignate-logo.svg';
+import ignateLogo from '../../assets/ignate-logo.svg';
 
 export function Header() {
   return (

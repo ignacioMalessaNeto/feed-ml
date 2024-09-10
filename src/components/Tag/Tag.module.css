@@ -1,0 +1,10 @@
+.tag {
+  font-weight: bold;
+  color: var(--green-500);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+& .tag:hover {
+  color: var(--green-300);
+}
